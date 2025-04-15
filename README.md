@@ -58,6 +58,9 @@ Pie chart visualization to highlight the total shipment by delay category
 3. Data Transformation: 
 - Calculated shipment efficiency by dividing the actual delivery time by the estimated delivery time.
 -Calculated customer repetition by counting the number of shipments for each customer.
+4. Table separated into facts and dimension table and model was created as shown below.
+
+  ![Star schema for logistics](schema-1.png)
 
 - Data Loading: 
 The cleaned and transformed data was loaded into Power BI Desktop using the "Get Data" functionality.
