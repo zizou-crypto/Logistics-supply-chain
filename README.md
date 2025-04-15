@@ -54,13 +54,15 @@ Pie chart visualization to highlight the total shipment by delay category
 4. Data Preparation 
 - Data Cleaning: 
 1. Handled missing values in the delay hours column by replacing them with the average delay time for that material type.
-2. Ensured data consistency in date formats.
+2. Ensured data consistency in date formats and date table was created for time series analysis
 3. Data Transformation: 
 - Calculated shipment efficiency by dividing the actual delivery time by the estimated delivery time.
 -Calculated customer repetition by counting the number of shipments for each customer.
 4. Table separated into facts and dimension table and model was created as shown below.
 
   ![Star schema for logistics](schema-1.PNG)
+  ![date table](datetable.PNG)
+  ![KPI](retention_customer.PNG)
 
 - Data Loading: 
 The cleaned and transformed data was loaded into Power BI Desktop using the "Get Data" functionality.
