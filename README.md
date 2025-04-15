@@ -42,14 +42,48 @@ Sample shipment data was provided in the form of a Xlxs file.  The data included
 
 - Visualizations Created: 
 
-KPI cards to display key metrics at a glance.
-
-Bar charts to visualize delivery time by material shipped.
-
+KPI cards to display key metrics at a glance (Total shipments, Total customers, Total suppliers, Avg distance)
+Bar charts to visualize total shipment by supplier and top routes by shipment.
 Line chart to show total shipments and average delay hours by material shipped.
-
-Map visualization to show average distance covered by shipment route.
-
+Map visualization to show the total shipments by origin location.
 Tables to display customer details.
-
+Column chart to visualize total shipment by booking hour and delivery time by materials supplied
 Slicers for filtering data by quarter and shipment type.
+Pie chart visualization to highlight the total shipment by delay category
+
+4. Data Preparation 
+- Data Cleaning: 
+1. Handled missing values in the delay hours column by replacing them with the average delay time for that material type.
+2. Ensured data consistency in date formats.
+3. Data Transformation: 
+- Calculated shipment efficiency by dividing the actual delivery time by the estimated delivery time.
+-Calculated customer repetition by counting the number of shipments for each customer.
+
+- Data Loading: 
+The cleaned and transformed data was loaded into Power BI Desktop using the "Get Data" functionality.
+
+5. Dashboard Highlights
+- Interactive Filtering: Slicers allow users to dynamically filter the data by quarter and shipment type, enabling them to focus on specific segments.
+- Key Performance Indicators (KPIs): KPI cards provide a high-level overview of shipment performance, highlighting key metrics such as total shipments, efficiency, and delays.
+- Trend Analysis: Visualizations such as the line chart  help identify trends in shipment volume and delay hours over time.
+- Comparative Analysis: The bar chart enables comparison of delivery times across different materials shipped.
+- Geographical Insights: The map visualization provides insights into the average distance covered by shipment routes.
+- Customer Analysis: The table displays customer shipment activity.
+
+6. Challenges and Solutions
+
+- Challenge: Handling inconsistencies in the date format across different data sources.
+Solution: Used Power Query to standardize the date format to ensure accurate analysis.
+- Challenge: Visualizing a large number of shipment routes on a map without overcrowding.
+Solution: Used appropriate zoom levels and tooltips to provide detailed information on demand.
+
+7. Future Enhancements
+
+Incorporate predictive analytics to forecast future shipment delays.
+Implement real-time data updates for live shipment tracking.
+Add more detailed information about shipping costs.
+Expand the analysis to include carrier performance.
+
+8. Conclusion
+
+This project demonstrates the ability to develop a comprehensive and interactive dashboard for analyzing shipment performance data. The dashboard provides valuable insights for optimizing logistics operations, reducing delays, and improving overall delivery efficiency.  This project highlights my skills in data visualization, DAX calculations, and dashboard design, making it a valuable addition to my data analytics portfolio.  
